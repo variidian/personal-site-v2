@@ -10,12 +10,6 @@ import '../styles/global.css';
 	<img src="/art/programmer section.webp" loading="lazy">
 	<img src="/art/artist section.webp" loading="eager" fetchpriority="high">
 	<img src="/art/who ru lf section.webp" loading="eager" fetchpriority="high">
-	<img src="/art/hero astronaut.webp" loading="eager" fetchpriority="high" class="astronaut">
-	<img src="/art/who.webp" loading="eager" fetchpriority="high" class="wiggle">
-	<img src="/art/are.webp" loading="eager" fetchpriority="high" class="wiggle2">
-	<img src="/art/you.webp" loading="eager" fetchpriority="high" class="wiggle3">
-	<img src="/art/looking.webp" loading="eager" fetchpriority="high" class="wiggle4">
-	<img src="/art/for.webp" loading="eager" fetchpriority="high" class="wiggle5">
 	<img src="/art/clouds_all.webp" loading="lazy">
 	<img src="/art/outline - wip.webp" class="hidden" loading="lazy" id="wip_outline">
 	<img src="/art/outline - variidian.webp" class="hidden" loading="lazy" id="variidian_outline">
@@ -35,5 +29,37 @@ import '../styles/global.css';
 			</g>
 			</g>
 			</svg>
+
+			<div class="relative [&>img]:absolute">
+				<div class="grid grid-cols-10 grid-rows-10 h-screen ">
+					<div class="col-[4/5] row-[3/4]">
+						<p>who</p>
+					</div>
+					<div class="col-[3/4] row-[4/5]">
+					<p>are</p>
+				</div>
+					<div class="col-[4/5] row-[5/6]">
+					<p>you</p>
+				</div>
+				<div class="col-[5/6] row-[6/7]">
+				<p>looking</p>
+			</div>
+				<div class="col-[4/5] row-[8/9]">
+				<p>for</p>
+				</div>
+				<div class="col-[8/11] row-[4/5]">
+					<img src="/art/hero astronaut.webp">
+				</div>
+				</div>
+			</div>
+
 </div>
 </Layout>
+
+<style>
+	p {
+		font-size: xx-large;
+		color: white;
+		font-family: "Space Mono", monospace;
+	}
+</style>
