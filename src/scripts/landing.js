@@ -1,11 +1,16 @@
 import { gsap } from "gsap";
 
-gsap.to(".stagger_in", {
-  duration: 1,
-  scale: 2,
-  stagger: 1,
-  ease: "power1.inOut" 
-})
+window.addEventListener("load", () => {
+  gsap.from(".stagger_in", {
+    duration: 0.4,
+    scale: 0,
+    stagger: 0.3,
+    ease: "back.out(3)",
+    delay: 1
+  })
+}
+)
+
 
 // artist section 
 document.getElementById('artist_sec').addEventListener('mouseenter', () => {
