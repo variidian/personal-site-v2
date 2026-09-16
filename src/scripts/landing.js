@@ -50,11 +50,19 @@ document.getElementById('wip_sec').addEventListener('mouseenter', () => {
     document.getElementById('wip_outline').classList.add('hidden')
     document.body.style.cursor = 'default';
   });
+  document.getElementById('wip_sec').addEventListener('click', () => {
+    window.location.href="/wip"
+  });
 
 // variidian section 
 document.getElementById('variidian_sec').addEventListener('mouseenter', () => {
     document.getElementById('variidian_outline').classList.remove('hidden')
+    document.body.style.cursor = 'pointer';
   });
   document.getElementById('variidian_sec').addEventListener('mouseleave', () => {
     document.getElementById('variidian_outline').classList.add('hidden')
+    document.body.style.cursor = 'default';
+  });
+  document.getElementById('variidian_sec').addEventListener('click', () => {
+    window.location.href="/me"
   });
